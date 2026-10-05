@@ -1,0 +1,36 @@
+### GET all users
+GET http://localhost:8080/api/users
+
+### CREATE user
+POST http://localhost:8080/api/users
+Content-Type: application/json
+
+{
+  "name": "Organizer One",
+  "email": "organizer@test.com"
+}
+
+### GET all events
+GET http://localhost:8080/api/events
+
+### CREATE event
+POST http://localhost:8080/api/events
+Content-Type: application/json
+
+{
+  "title": "Test Event",
+  "category": "Music",
+  "eventType": "Concert",
+  "venue": "Test Venue",
+  "address": "Test Address",
+  "city": "Athens",
+  "country": "Greece",
+  "startDateTime": "2025-07-12T20:30:00",
+  "endDateTime": "2025-07-12T23:00:00",
+  "capacity": 100,
+  "status": "DRAFT",
+  "description": "Test event",
+  "organizer": {
+    "id": 1
+  }
+}
